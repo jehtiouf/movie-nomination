@@ -5,7 +5,7 @@ const Search = ({setMovieList}) => {
     const [keyword,setKeyword] = useState("");
     const handleChange = (e) => {
         setKeyword(e.target.value);
-        fetch(`http://www.omdbapi.com/?apikey=23f2a90c&s=${keyword}`)
+        fetch(`https://www.omdbapi.com/?apikey=23f2a90c&s=${keyword}`)
         .then(response => response.json())
         .then(saveMovies)
     }
