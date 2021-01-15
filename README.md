@@ -4,7 +4,9 @@ https://movie-nomination-jehtiouf.netlify.app/
 
 ### ABOUT
 
-A single-page-application to search for your favorite movies & TV shows and vote for the ones to watch next with your family & friends.
+Can't decide what to watch next with your family & friends? 
+
+A single-page-application to search for your favorite movies & TV shows and vote for the ones to watch next. 
 
 ### How to use 
 
