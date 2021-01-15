@@ -5,6 +5,11 @@ import Home from "./components/Home/Home";
 import MovieCart from "./components/MovieCart/MovieCart";
 
 function App() {
+  if(!JSON.parse(localStorage.getItem("nominations")))
+  {
+    var dummy = [];    
+    localStorage.setItem("nominations", JSON.stringify(dummy));
+  }
   return (
     <Router >
       <Switch>

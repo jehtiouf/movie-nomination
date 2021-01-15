@@ -7,8 +7,13 @@ import {Container} from 'react-bootstrap'
 
 const Home = () => {
     const nominations = JSON.parse(localStorage.getItem("nominations"));
+    var number = 0;
+    if(nominations)
+    {
+      number = nominations.length;
+    }
     const [movieList, setMovieList] = useState([]);
-    const [numNominations, setNumNominations] = useState(nominations.length);
+    const [numNominations, setNumNominations] = useState(number);
 
     return(
     <Container>

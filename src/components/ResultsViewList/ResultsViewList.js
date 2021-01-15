@@ -7,10 +7,11 @@ import NominateButton from '../NominateButton/NominateButton';
 const ResultsViewList = ({movieList,setNumNominations}) => {
     var nominations = JSON.parse(localStorage.getItem("nominations"));
     var nominationIds = [];
-
-    for(var i = 0 ; i < nominations.length ; i ++)
-    {
-        nominationIds.push(nominations[i].Id);
+    if(nominations){
+      for(var i = 0 ; i < nominations.length ; i ++)
+        {
+            nominationIds.push(nominations[i].Id);
+        }   
     }
     
 
